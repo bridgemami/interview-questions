@@ -21,6 +21,10 @@ questionEl.textContent= `Write a PANIC! function. The function should take in a 
 
 // Test your function
 function panic(str) {
+    //first convert the string to an array with split
+    //second delete the commas and replace them with emoiji with join
+    //third convert it to upper case 
+    //fourth add an ! with concat
     const translate = str.split(' ').join('😱').toUpperCase().concat('!')
     
     document.body.innerHTML += `<p>${translate}</p>`
