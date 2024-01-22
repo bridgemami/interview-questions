@@ -1,35 +1,40 @@
 const questionEl = document.getElementById("question")
+const answerEl = document.body
+/* Whispering function 
+Write a function `whisper` that takes in a sentence 
+and returns a new sentence in all lowercase letters with
+"shh..." at the beginning. 
 
-/* Panic function 
-Write a PANIC! function. The function should take in a sentence and return the same
-sentence in all caps with an exclamation point (!) at the end. Use JavaScript's
-built in string methods. 
+The function should also remove an exclamation point
+at the end of the sentence, if there is one. 
 
-If the string is a phrase or sentence, add a 😱 emoji in between each word. 
+Example 
+input: "The KITTENS are SLEEPING!"
+output: "shh... the kittens are sleeping"
 
-Example input: "Hello"
-Example output: "HELLO!"
-
-Example input: "I'm almost out of coffee"
-Example output: "I'M 😱 ALMOST 😱 OUT 😱 OF 😱 COFFEE!"
-
-.split() .join()
+Hint: endsWith and slice
 */
-questionEl.textContent= `Write a PANIC! function. The function should take in a sentence and return the same
-    sentence in all caps with an exclamation point (!) at the end. Use JavaScript's
-    built in string methods.`
+questionEl.textContent= `Write a function "whisper" that takes in a sentence 
+and returns a new sentence in all lowercase letters with
+"shh..." at the beginning.`
 
 // Test your function
-function panic(str) {
-    //first convert the string to an array with split
-    //second delete the commas and replace them with emoiji with join
-    //third convert it to upper case 
-    //fourth add an ! with concat
-    const translate = str.split(' ').join('😱').toUpperCase().concat('!')
-    
-    document.body.innerHTML += `<p>${translate}</p>`
-    return translate
+function whisper(str) {
+    // 1) concat the shh
+    // 2) convert the string to lower case
+    // 3) first three steps make into one variable
+    // 4) check if the the string ends with ! 
+    const translate = 'shhh... ' + str.toLowerCase()
+    if(str.endsWith('!')){
+        const withPointAtEnd = translate.slice(0, -1)
+        answerEl.innerHTML += `<p>${withPointAtEnd}</p>`
+        return withPointAtEnd
+    }
+    else {
+        answerEl.innerHTML += `<p>${translate}</p>`
+        return  translate
+    }
 }
-console.log(panic("I'm almost out of coffee")); 
-console.log(panic("winter is coming"))
-console.log(panic('hello'))
+
+console.log(whisper("PLEASE STOP SHOUTING."));
+console.log(whisper("MA'AM, this is a Wendy's!"));
