@@ -1,33 +1,49 @@
 const questionEl = document.getElementById("question")
 const answerEl = document.body
-/* Alternating Caps 
- Write a function that takes in a string of letters
- and returns a sentence in which every other letter is capitalized.
+/* toTitleCase
+Write a function that will capitalize every word in a sentence.  
 
-Example input: "I'm so happy it's Monday"
-Example output: "I'M So hApPy iT'S MoNdAy"
+Example Input: "everything, everywhere, all at once"
+Example Output: "Everything, Everywhere, All At Once"
 */
 
-questionEl.textContent= `Write a function that takes in a string of letters
-and returns a sentence in which every other letter is capitalized.`
+/* 
+First, write a function that takes in one word and 
+capitalizes the first letter of that word.
+
+Example Input: "scrimba"
+Example Output: "Scrimba"
+
+Hint: Trying using slice() and .toUpperCase()
+*/
+
+questionEl.textContent= `Write a function that will capitalize every word in a sentence. `
 // Test your function
-function altCaps(str){
-    // 1) create a new variable for the new string 
-    // 2) loop over the string
-    // 3) find the even index or zero position and convert it to a capitalize letter
-    // 4) for the odd number index convert it to lower case
-    // 5) make sure the new string joins together
-    let newStr = ``
-    for(let i = 0; i < str.length; i++) {
-        if(i % 2 ===0) {
-            newStr += str[i].toUpperCase()
-        }
-        else {
-            newStr += str[i].toLowerCase()
-        }
-    }
-    answerEl.innerHTML +=`<p>${newStr}</p>`
-    return newStr;
+function capitalizeWord(word){
+    // 1) I need to capitalize the first letter and capitalize it
+    // 2) rejoing the capitalize letter
+    const newStr = word.slice(0,1).toUpperCase()+ word.slice(1)
+    answerEl.innerHTML += `<p>For a word: ${newStr}</p>`
+    return newStr
 }
 
-console.log(altCaps("When you visit Portland you have to go to VooDoo Donuts"));
+/* 
+Now write a function that capitalizes every word in a sentence. 
+How can you reuse the function you just wrote? 
+*/ 
+
+function toTitleCase(str){
+    // 1) I need to loop through the sentence
+    // 2) Each word I need to capital the first letter
+    // 3) Then recreate the senetence with the new change
+    let splittingTheString=  str.split(' ')
+    const newStr = splittingTheString.map(word => { 
+          return capitalizeWord(word)
+    }).join(' ')
+    answerEl.innerHTML += `<p>For a sentence: ${newStr}</p>`
+return newStr
+}
+
+// Test your functions
+console.log(capitalizeWord("pumpkin"));
+console.log(toTitleCase("pumpkin pranced purposefully across the pond"));
