@@ -1,50 +1,43 @@
 const questionEl = document.getElementById("question")
 const answerEl = document.body
-/*  
-Grandpa's hand isn't as steady as it used to be. You finally convinced him
-to start using a password manager, but he accidentally typed and saved his
-password with a bunch of extra characters. Help him recover his password by 
-removing all the duplicate characters. 
+/* 
+How often do the letters in your name repeat? 
 
-Your function should take in a string of characters and return a
-string with the duplicate characters removed. Assume that your input
-is lowercased with only letters and numbers.  
+Write a function that counts how many times each letter of your name
+occurs. Your function should take in your first and last name and return
+an object where the keys are each character in your name, and the value
+is how many times that character appears in your name. 
 
-Example input: "aabbccb1212"
-Example output: "abc12"
+Example input: "Peggy Porth"
+Example output: {p: 2, e: 1, g: 2, y: 1, o: 1, r: 1, t: 1, h: 1}
+
+Your function should NOT count spaces and should not be case sensitive (a
+lowercase t and a capital T should be considered the same character).
+
 */ 
 
+questionEl.innerHTML += `Write a function that counts how many times each letter of your name
+occurs. Your function should take in your first and last name and return
+an object where the keys are each character in your name, and the value
+is how many times that character appears in your name. 
+<br /> <br />
+Example input: "Michael Bridgeman"<br />
+Example output: {m:2, i:2, c:1, h:1, a:2, e:2, l:1, b:1, r:1, d:1, g:1, n:1}`
 
-questionEl.innerHTML += `Your function should take in a string of characters and return a
-string with the duplicate characters removed. Assume that your input
-is lowercased with only letters and numbers.  
-<br /><br />
-Example input: "aabbccb1212"
-Example output: "abc12"`
 
-
-// Solution 1: for loop 
-const password = "9338dsabbbadjdjdj2sdfdfdf282ff8fdsd888ss8cfgfg332q23"; 
- 
-function removeDupeChars(chars){
-    // 1) convert the string to an array
-    // 2) create a new array without the dulicates
-    // 3) loop over the array
-    // 4) while looping compare what exist in the new string
-    // 5) join the new array into a string
-    const trimPassword = chars.split('')
-    let cleanPassword =[]
-    for( let i =0; i< trimPassword.length; ++i) {
-        if(cleanPassword.includes(trimPassword[i])) {
-            null
-        }
-        else {
-           cleanPassword.push(trimPassword[i])
-        }
+function countChars(str){
+ const newStr= str.toLowerCase().split(' ').join('')
+ let count= {}
+ for(let i= 0; i< newStr.length; i++) {
+    if(!count[newStr[i]]) {
+        count[newStr[i]] = 1
     }
-    answerEl.innerHTML += `<p>${cleanPassword.join('')}</p>`
-    return cleanPassword.join('')
+    else {
+        count[newStr[i]] += 1
+    }
+ }
+ answerEl.innerHTML+=`<p>${JSON.stringify(count)}</p>`
+return count
 }
 
-console.log(removeDupeChars(password));
-console.log(removeDupeChars('aabbccb1212'));
+console.log(countChars("Michael Bridgeman"));
