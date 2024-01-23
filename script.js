@@ -1,56 +1,59 @@
 const questionEl = document.getElementById("question")
 const answerEl = document.body
-/* 
-
-Anagrams are groups of words that can be spelled with the same letters. 
-For example, the letters in "pea" can be rearrange to spell "ape", and 
-the letters in "allergy" can be rearranged to spell "gallery."
-
-Write a function to check if two strings of lowercase letters are anagrams. 
-Return true if the word is an anagram. Return false if it isn't. 
-
-Example input: "allergy", "gallery"
-Example output: true
-
-Example input: "rainbow", "crossbow"
-Example output: false
-
+/* We Come in Peace!   
+We've received what (we assume) is a message of peace and brotherhood from 
+an alien planet. They almost got it right, but the messages are 
+backward. Write functions to reverse the backward messages so we can 
+read what they have to say! 
 */ 
 
-questionEl.innerHTML= `Write a function to check if two strings of lowercase letters are anagrams. 
-Return true if the word is an anagram. Return false if it isn't. 
+const title = ":htraE no od ot ffutS";
+const messages = [
+            "maerc eci yrT",
+            "rewoT leffiE tisiV",
+            "noom eht ot snamuh etacoleR",
+            "egrahc ni stac tuP", 
+        ]
 
-<p>Example input: "allergy", "gallery"<br />
-Example output: true</p>
 
-<p>Example input: "rainbow", "crossbow"<br />
-Example output: false</p>
+questionEl.innerHTML += `<p>We Come in Peace! <br />   
+We've received what (we assume) is a message of peace and brotherhood from 
+an alien planet. They almost got it right, but the messages are 
+backward.<br />
+Write functions to reverse the backward messages so we can 
+read what they have to say!</p>`
 
-<p>Example input: "inch", "chin"<br />
-Example output: true</p>
-`
+/* Step 1: Reverse a string
+Write a function that takes in a string and returns the reverse 
+of that string. An interviewer may want to check if you know your
+string methods, or may want to know if you can reverse a string manually. 
+Practice both ways! 
 
-function isAnagram(str1, str2){
-    // 1) check if the length is the same
-    // 2) use split method on the string
-    // 3) sort the new array
-    // 4) join the array as one word
-    // 5) check to see if they match
-    if (str1.length === str2.length) {
-       const word1 = str1.split('').sort().join('')
-       const word2 = str2.split('').sort().join('')
-       if(word1===word2) {
-        answerEl.innerHTML += `<p>Yes, it is  an anagram</p>`
-        return true
-       }
-       }
-    
-    else {
-        answerEl.innerHTML += `<p>Not an anagram</p>`
-        return false
-    }
+Example input: !htrae ot emocleW
+Example output: Welcome to earth!
+*/  
+
+function reverseString(str){
+    // 1) switch string to array with split method
+    // 2) use the reverse method
+    // 3) use the join mehod to make it a string
+    const reverseString = str.split('').reverse().join('');
+    answerEl.innerHTML += `<p>${reverseString}</p>`
+    return reverseString
 }
 
-console.log(isAnagram("allergy", "gallery"));
-console.log(isAnagram("treasure", "measure"));
-console.log(isAnagram("inch", "chin"));
+/*
+Step 2: Now we'll reverse all strings in an array. Write a function that takes in
+an array of strings and returns a new array with all strings reversed.
+
+You can use reuse your reverseString() function, use string methods, or 
+reverse the strings manually. 
+*/ 
+
+function reverseStringsInArray(arr){
+    // 4) map the array with the reverseString function
+    return arr.map(a => reverseString(a)).join(' ')
+}
+
+console.log(reverseString(title));
+console.log(reverseStringsInArray(messages));
