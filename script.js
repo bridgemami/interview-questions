@@ -50,3 +50,8 @@ function removeDupesFromArray(arr){
 }
 
 console.log(removeDupesFromArray(eggScrambleRecipe));
+
+//alternative solution
+// function removeDupesFromArray(arr){
+//     return [...new Set(arr)];
+// }
