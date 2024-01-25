@@ -1,43 +1,52 @@
 const questionEl = document.getElementById("question")
 const answerEl = document.body
-/* 
-How often do the letters in your name repeat? 
+/* Chef Mario's Recipe Book 
+Chef Mario was in the middle of writing his cookbook masterpiece
+when he spilled coffee on his keyboard! Now all his recipes have repeat
+ingredients.
 
-Write a function that counts how many times each letter of your name
-occurs. Your function should take in your first and last name and return
-an object where the keys are each character in your name, and the value
-is how many times that character appears in your name. 
+Help save Chef Mario's cookbook by writing a function that takes in an array 
+and returns a new array with all the duplicates removed. 
 
-Example input: "Peggy Porth"
-Example output: {p: 2, e: 1, g: 2, y: 1, o: 1, r: 1, t: 1, h: 1}
-
-Your function should NOT count spaces and should not be case sensitive (a
-lowercase t and a capital T should be considered the same character).
-
+Example input: ["🌈 rainbow", "🦄 unicorn", "🍭 lollipops", "🦄 unicorn", "🍭 lollipops"];
+Example output: ["🌈 rainbow", "🦄 unicorn", "🍭 lollipops"];
 */ 
 
-questionEl.innerHTML += `Write a function that counts how many times each letter of your name
-occurs. Your function should take in your first and last name and return
-an object where the keys are each character in your name, and the value
-is how many times that character appears in your name. 
+questionEl.innerHTML += `Write a function that takes in an array 
+and returns a new array with all the duplicates removed.
 <br /> <br />
-Example input: "Michael Bridgeman"<br />
-Example output: {m:2, i:2, c:1, h:1, a:2, e:2, l:1, b:1, r:1, d:1, g:1, n:1}`
+Example input: ["🌈 rainbow", "🦄 unicorn", "🍭 lollipops", "🦄 unicorn", "🍭 lollipops"];
+Example output: ["🌈 rainbow", "🦄 unicorn", "🍭 lollipops"];`
 
 
-function countChars(str){
- const newStr= str.toLowerCase().split(' ').join('')
- let count= {}
- for(let i= 0; i< newStr.length; i++) {
-    if(!count[newStr[i]]) {
-        count[newStr[i]] = 1
+const eggScrambleRecipe = [
+    "🥓 bacon",
+    "🥓 bacon", 
+    "🍳 eggs",
+    "🫑 green peppers",
+    "🧀 cheese",
+    "🌶️ hot sauce",
+    "🥓 bacon",
+    "🥦 broccoli", 
+    "🧀 cheese",
+    "🥦 broccoli", 
+    "🌶️ hot sauce"
+]
+
+function removeDupesFromArray(arr){
+// 1) create a new array
+// 2) loop the arugment for the function
+// 3) check to see if the item is in the new string
+// 4) if not push it into the new array
+    let newArr= []
+    for( let i= 0; i < arr.length; i++) {
+        console.log(arr[i])
+        if(!newArr.includes(arr[i])){
+             newArr.push(arr[i])
+        }
     }
-    else {
-        count[newStr[i]] += 1
-    }
- }
- answerEl.innerHTML+=`<p>${JSON.stringify(count)}</p>`
-return count
+    answerEl.innerHTML+= `<p>${newArr.join(', ')}</p>`
+    return newArr
 }
 
-console.log(countChars("Michael Bridgeman"));
+console.log(removeDupesFromArray(eggScrambleRecipe));
