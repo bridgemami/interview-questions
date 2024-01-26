@@ -1,57 +1,45 @@
 const questionEl = document.getElementById("question")
 const answerEl = document.body
-/* Chef Mario's Recipe Book 
-Chef Mario was in the middle of writing his cookbook masterpiece
-when he spilled coffee on his keyboard! Now all his recipes have repeat
-ingredients.
+/* 
+Scrimba mascot Pumpkin has won the grand prize at an international 
+cat show. Below are Pumpkin's scores from the judges, as well as all the 
+prizes he's won. In all the excitement of victory,
+they've become a jumbled mess of nested arrays. Let's 
+help Pumpkin by sorting it out. 
 
-Help save Chef Mario's cookbook by writing a function that takes in an array 
-and returns a new array with all the duplicates removed. 
+Write a function to flatten nested arrays of strings or
+numbers into a single array. There's a method
+for this, but pratice both doing it manually and using the method. 
 
-Example input: ["🌈 rainbow", "🦄 unicorn", "🍭 lollipops", "🦄 unicorn", "🍭 lollipops"];
-Example output: ["🌈 rainbow", "🦄 unicorn", "🍭 lollipops"];
-*/ 
+Example input: [1, [4,5], [4,7,6,4], 3, 5]
+Example output: [1, 4, 5, 4, 7, 6, 4, 3, 5]
+*/
 
-questionEl.innerHTML += `Write a function that takes in an array 
-and returns a new array with all the duplicates removed.
+questionEl.innerHTML += `Write a function to flatten nested arrays of strings or
+numbers into a single array. There's a method
+for this, but pratice both doing it manually and using the method.
 <br /> <br />
-Example input: ["🌈 rainbow", "🦄 unicorn", "🍭 lollipops", "🦄 unicorn", "🍭 lollipops"];
-Example output: ["🌈 rainbow", "🦄 unicorn", "🍭 lollipops"];`
+Example input: ["💰", "🐟", "🐟"], "🏆", "💐", "💵", ["💵", "🏆"],
+["🐟","💐", "💐"], "💵", "💵", ["🐟"], "🐟"<br /><br />
 
+Example input: [39, 99, 76], 89, 98, [87, 56, 90], 
+[96, 95], 40, 78, 50, [63]<br /><br />
+`
+const kittyScores = [
+    [39, 99, 76], 89, 98, [87, 56, 90], 
+    [96, 95], 40, 78, 50, [63]
+];
 
-const eggScrambleRecipe = [
-    "🥓 bacon",
-    "🥓 bacon", 
-    "🍳 eggs",
-    "🫑 green peppers",
-    "🧀 cheese",
-    "🌶️ hot sauce",
-    "🥓 bacon",
-    "🥦 broccoli", 
-    "🧀 cheese",
-    "🥦 broccoli", 
-    "🌶️ hot sauce"
-]
+const kittyPrizes = [
+    ["💰", "🐟", "🐟"], "🏆", "💐", "💵", ["💵", "🏆"],
+    ["🐟","💐", "💐"], "💵", "💵", ["🐟"], "🐟"
+];
 
-function removeDupesFromArray(arr){
-// 1) create a new array
-// 2) loop the arugment for the function
-// 3) check to see if the item is in the new string
-// 4) if not push it into the new array
-    let newArr= []
-    for( let i= 0; i < arr.length; i++) {
-        console.log(arr[i])
-        if(!newArr.includes(arr[i])){
-             newArr.push(arr[i])
-        }
-    }
-    answerEl.innerHTML+= `<p>${newArr.join(', ')}</p>`
-    return newArr
+function flatten(arr){
+    //1) use flat method
+    answerEl.innerHTML += `<p>${arr.flat().join(', ')}</p>`
+ return arr.flat()
 }
 
-console.log(removeDupesFromArray(eggScrambleRecipe));
-
-//alternative solution
-// function removeDupesFromArray(arr){
-//     return [...new Set(arr)];
-// }
+console.log(flatten(kittyPrizes));
+console.log(flatten(kittyScores));
