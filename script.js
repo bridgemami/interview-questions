@@ -1,61 +1,52 @@
 const answerEl = document.body
 const questionEl = document.getElementById("question")
-/* Totally Private Data Farm 
+/* Find Free Podcasts 
 
-Good news, renown advertising firm Evil Corp. wants to purchase our 
-private user data! 
+We have a list of podcasts and need the ability to filter by only
+podcasts which are free.
 
-We'd never do this in real life of course, but just for practice 
-let's pretend we're unethical web hackers and transform the data 
-in the way Evil Corp. has requested. They're quite particular and
-just want an array of users with a fullname and human readable
-birthday.   
+Write a function that takes in the podcast data and returns an new
+array of only those podcasts which are free.
 
-Write a function that maps through the current data and returns
-a new an array of objects with only two properties: 
-fullName and birthday. Each result in your 
-array should look like this when you're done: 
+Additionally, your new array should return only 
+objects containing only the podcast title, rating, and whether or 
+not it is paid. 
 
-{
-    fullName: "Levent Busser", 
-    birthday: "Fri Aug 20 1971"
-}
-
-Read about toDateString() for info on formatting a readable date. 
-
+Expected output: 
+[
+    {title: "Scrimba Podcast", rating: 10, paid: false}, 
+    {title: "Something about Witches", rating: 8, paid: false}, 
+    {title: "Coding Corner", rating: 9, paid: false}
+]
 */
 
-questionEl.innerHTML += `Write a function that maps through the current data and returns
-a new an array of objects with only two properties: 
-fullName and birthday. Each result in your 
-array should look like this when you're done:
+questionEl.innerHTML += `Write a function that takes in the podcast data and returns an new
+array of only those podcasts which are free.
 <br /><br />
-{
-    fullName: "Levent Busser", 
-    birthday: "Fri Aug 20 1971"
-}
-} 
+Expected output: 
+[
+    {title: "Scrimba Podcast", rating: 10, paid: false}, 
+    {title: "Something about Witches", rating: 8, paid: false}, 
+    {title: "Coding Corner", rating: 9, paid: false}
+] 
 `
-import userData from "./data.js";
+import podcasts from "./data.js";
 
 
-function transformData(data){
-    // 1) create a new array for this function
-    // 2) map through the frunction
-    // 3) create a new object within the map method
-    // 4) push the object into the new array
-    // 5) convert the date
-    let newArr= []
-    data.map(d =>{
-    const date = new Date(d.dob.date)
-    let dateString =date.toDateString()    
-       let newObj = {
-        fullname: `${d.name.first} ${d.name.last}`,
-        birthday: dateString}
-        newArr.push(newObj)
-    })
-    answerEl.innerHTML += JSON.stringify(newArr)
-    return newArr
+function getFreePodcasts(data){
+    // 1) loop through the array
+    // 2) return the values that you need
+    // 3) filter the free podcasts
+   const loopingData = data.map(d => {
+    return {
+        title: d.title,
+        rating: d.rating,
+        paid: d.paid
+    }
+   })
+   const filtering= loopingData.filter(loop=> loop.paid === false)
+   answerEl.innerHTML += `<p>${JSON.stringify(filtering)}</p>`
+   return filtering
 }
 
-console.log(transformData(userData));
+console.log(getFreePodcasts(podcasts))
