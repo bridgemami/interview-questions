@@ -1,45 +1,34 @@
 const questionEl = document.getElementById("question")
 const answerEl = document.body
-/* 
-Scrimba mascot Pumpkin has won the grand prize at an international 
-cat show. Below are Pumpkin's scores from the judges, as well as all the 
-prizes he's won. In all the excitement of victory,
-they've become a jumbled mess of nested arrays. Let's 
-help Pumpkin by sorting it out. 
+/*
+Alex from Scrimba wants to know how many new students have attended 
+Scrimba's weekly Town Hall event this year. 
 
-Write a function to flatten nested arrays of strings or
-numbers into a single array. There's a method
-for this, but pratice both doing it manually and using the method. 
+He has an array of first-time attendees for each month of the year. 
+Help him find the total number of attendees! Your function should
+take in an array and return a number representing the total number
+of new attendees. 
 
-Example input: [1, [4,5], [4,7,6,4], 3, 5]
-Example output: [1, 4, 5, 4, 7, 6, 4, 3, 5]
-*/
+Example input: [1,2,3]
+Example output: 6
+ */
 
-questionEl.innerHTML += `Write a function to flatten nested arrays of strings or
-numbers into a single array. There's a method
-for this, but pratice both doing it manually and using the method.
+questionEl.innerHTML += `Your function should
+take in an array and return a number representing the total number
+of new attendees.
 <br /> <br />
-Example input: ["💰", "🐟", "🐟"], "🏆", "💐", "💵", ["💵", "🏆"],
-["🐟","💐", "💐"], "💵", "💵", ["🐟"], "🐟"<br /><br />
-
-Example input: [39, 99, 76], 89, 98, [87, 56, 90], 
-[96, 95], 40, 78, 50, [63]<br /><br />
+Example input: [50,53,61,67,60,70,78,80,80,81,90,110]<br /><br />
+Example input: [1,2,3]
 `
-const kittyScores = [
-    [39, 99, 76], 89, 98, [87, 56, 90], 
-    [96, 95], 40, 78, 50, [63]
-];
 
-const kittyPrizes = [
-    ["💰", "🐟", "🐟"], "🏆", "💐", "💵", ["💵", "🏆"],
-    ["🐟","💐", "💐"], "💵", "💵", ["🐟"], "🐟"
-];
+const studentCount = [50,53,61,67,60,70,78,80,80,81,90,110];
 
-function flatten(arr){
-    //1) use flat method
-    answerEl.innerHTML += `<p>${arr.flat().join(', ')}</p>`
- return arr.flat()
+function sumArray(arr){
+    // 1) use the reduce method to get the sum of an array
+    const sumOfArray = arr.reduce((a,b) => a + b)
+    answerEl.innerHTML += `<p>Sum is: ${sumOfArray}</p>`
+    return sumOfArray
 }
 
-console.log(flatten(kittyPrizes));
-console.log(flatten(kittyScores));
+console.log(sumArray(studentCount));
+console.log(sumArray([1,2,3]));
