@@ -1,56 +1,61 @@
-const questionEl = document.getElementById("question")
 const answerEl = document.body
-/* Pizza Night? 
-It's the weekend and you and your friends can't agree on 
-what to order for dinner, so you put it to a vote. 
+const questionEl = document.getElementById("question")
+/* Totally Private Data Farm 
 
-Write a function to find the food with the highest number of votes. 
+Good news, renown advertising firm Evil Corp. wants to purchase our 
+private user data! 
 
-Your function should take in a food object and find the food
-with the most votes. It should log the winner, along with 
-how many votes it received.  
+We'd never do this in real life of course, but just for practice 
+let's pretend we're unethical web hackers and transform the data 
+in the way Evil Corp. has requested. They're quite particular and
+just want an array of users with a fullname and human readable
+birthday.   
 
-Example input: {"🐈 cats": 19, "🐕 dogs": 17} 
-Example output: The winner is 🐈 cats with 19 votes!
-*/ 
+Write a function that maps through the current data and returns
+a new an array of objects with only two properties: 
+fullName and birthday. Each result in your 
+array should look like this when you're done: 
 
-questionEl.innerHTML += `Write a function to find the food with the highest number of votes.
-<br /> <br />
-Example input: {<br />
-    "🍕 pizza": 3, <br />
-    "🌮 tacos": 10,<br /> 
-    "🥗 salads": 7,<br />
-    "🍝 pasta": 5
-}<br /><br />
-Example input:{<br />
-    "🐈 cats": 19, <br />
-    "🐕 dogs": 17<br />
+{
+    fullName: "Levent Busser", 
+    birthday: "Fri Aug 20 1971"
+}
+
+Read about toDateString() for info on formatting a readable date. 
+
+*/
+
+questionEl.innerHTML += `Write a function that maps through the current data and returns
+a new an array of objects with only two properties: 
+fullName and birthday. Each result in your 
+array should look like this when you're done:
+<br /><br />
+{
+    fullName: "Levent Busser", 
+    birthday: "Fri Aug 20 1971"
+}
 } 
-
 `
-const gameNightFood = {
-    "🍕 pizza": 3, 
-    "🌮 tacos": 10, 
-    "🥗 salads": 7,
-    "🍝 pasta": 5
+import userData from "./data.js";
+
+
+function transformData(data){
+    // 1) create a new array for this function
+    // 2) map through the frunction
+    // 3) create a new object within the map method
+    // 4) push the object into the new array
+    // 5) convert the date
+    let newArr= []
+    data.map(d =>{
+    const date = new Date(d.dob.date)
+    let dateString =date.toDateString()    
+       let newObj = {
+        fullname: `${d.name.first} ${d.name.last}`,
+        birthday: dateString}
+        newArr.push(newObj)
+    })
+    answerEl.innerHTML += JSON.stringify(newArr)
+    return newArr
 }
 
-function findTheWinner(obj){
-    // 1) create two variable to hold higgest vote count and the winning meal
-    // 2) loop through object
-    // 3) compare each vote tally
-    // 4) toss the lower vote
- let winningVote = 0
- let winningMeal = ''
- for(let food in obj) {
-    if(obj[food] > winningVote) {
-        winningMeal = food
-        winningVote = obj[food]
-    }
- }
- answerEl.innerHTML += `<p>The winner is ${winningMeal} with ${winningVote} votes.</p>`
- return `The winner is ${winningMeal} with ${winningVote} votes.`
-}
-
-console.log(findTheWinner(gameNightFood));
-console.log(findTheWinner({"🐈 cats": 19, "🐕 dogs": 17}));
+console.log(transformData(userData));
