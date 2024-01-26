@@ -1,34 +1,56 @@
 const questionEl = document.getElementById("question")
 const answerEl = document.body
-/*
-Alex from Scrimba wants to know how many new students have attended 
-Scrimba's weekly Town Hall event this year. 
+/* Pizza Night? 
+It's the weekend and you and your friends can't agree on 
+what to order for dinner, so you put it to a vote. 
 
-He has an array of first-time attendees for each month of the year. 
-Help him find the total number of attendees! Your function should
-take in an array and return a number representing the total number
-of new attendees. 
+Write a function to find the food with the highest number of votes. 
 
-Example input: [1,2,3]
-Example output: 6
- */
+Your function should take in a food object and find the food
+with the most votes. It should log the winner, along with 
+how many votes it received.  
 
-questionEl.innerHTML += `Your function should
-take in an array and return a number representing the total number
-of new attendees.
+Example input: {"🐈 cats": 19, "🐕 dogs": 17} 
+Example output: The winner is 🐈 cats with 19 votes!
+*/ 
+
+questionEl.innerHTML += `Write a function to find the food with the highest number of votes.
 <br /> <br />
-Example input: [50,53,61,67,60,70,78,80,80,81,90,110]<br /><br />
-Example input: [1,2,3]
+Example input: {<br />
+    "🍕 pizza": 3, <br />
+    "🌮 tacos": 10,<br /> 
+    "🥗 salads": 7,<br />
+    "🍝 pasta": 5
+}<br /><br />
+Example input:{<br />
+    "🐈 cats": 19, <br />
+    "🐕 dogs": 17<br />
+} 
+
 `
-
-const studentCount = [50,53,61,67,60,70,78,80,80,81,90,110];
-
-function sumArray(arr){
-    // 1) use the reduce method to get the sum of an array
-    const sumOfArray = arr.reduce((a,b) => a + b)
-    answerEl.innerHTML += `<p>Sum is: ${sumOfArray}</p>`
-    return sumOfArray
+const gameNightFood = {
+    "🍕 pizza": 3, 
+    "🌮 tacos": 10, 
+    "🥗 salads": 7,
+    "🍝 pasta": 5
 }
 
-console.log(sumArray(studentCount));
-console.log(sumArray([1,2,3]));
+function findTheWinner(obj){
+    // 1) create two variable to hold higgest vote count and the winning meal
+    // 2) loop through object
+    // 3) compare each vote tally
+    // 4) toss the lower vote
+ let winningVote = 0
+ let winningMeal = ''
+ for(let food in obj) {
+    if(obj[food] > winningVote) {
+        winningMeal = food
+        winningVote = obj[food]
+    }
+ }
+ answerEl.innerHTML += `<p>The winner is ${winningMeal} with ${winningVote} votes.</p>`
+ return `The winner is ${winningMeal} with ${winningVote} votes.`
+}
+
+console.log(findTheWinner(gameNightFood));
+console.log(findTheWinner({"🐈 cats": 19, "🐕 dogs": 17}));
