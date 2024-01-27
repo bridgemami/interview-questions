@@ -35,6 +35,9 @@ Expected output:
 import products from "./data.js";
 
 function getSaleItems(data){
+    // 1) filter out the now sweet item
+    // 2) map through the new array
+    // 3) return the item's name and price
     const filtering = data.filter(d => d.type === 'sweet')
     const shoppingCart= filtering.map(d=> {
         return {
