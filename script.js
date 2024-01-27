@@ -1,52 +1,27 @@
 const answerEl = document.body
 const questionEl = document.getElementById("question")
-/*
-   It's the day after Halloween 🎃 and all the candy is on sale!
-   
-   To buy up all the candy, use map() and filter() to put all the
-   candy into a `shoppingCart` array. 
-   
-   The new array should contain only the item and the price, like
-   this: 
-   
-   Expected output: 
-   [
-       {item: "🍭", price: 2.99},
-       {item: "🍫", price: 1.99}, 
-       {item: "🍬", price: 0.89}
-    ]
+/*  
+Use reduce() to total the groceries. 
+Then find a method that will round the total to 2 decimal places.
+
+Example output: 73.44
 */
 
-questionEl.innerHTML += `It's the day after Halloween 🎃 and all the candy is on sale!
-<br /><br />
-To buy up all the candy, use map() and filter() to put all the
-candy into a 'shoppingCart' array. 
-<br /><br />
-The new array should contain only the item and the price, like
-this: 
-<br /><br />
-Expected output: 
-[
-    {item: "🍭", price: 2.99},
-    {item: "🍫", price: 1.99}, 
-    {item: "🍬", price: 0.89}
- ]
+questionEl.innerHTML += `Use reduce() to total the groceries. 
+Then find a method that will round the total to 2 decimal places.
 `
-import products from "./data.js";
 
-function getSaleItems(data){
-    // 1) filter out the now sweet item
-    // 2) map through the new array
-    // 3) return the item's name and price
-    const filtering = data.filter(d => d.type === 'sweet')
-    const shoppingCart= filtering.map(d=> {
-        return {
-            item: d.item,
-            price: `$${d.price}`
-        }
-    })
-    answerEl.innerHTML +=`<p>${JSON.stringify(shoppingCart)}</p>`
-    return shoppingCart
-};
+import shoppingCart from "./data.js";
 
-console.log(getSaleItems(products))
+function total(arr){
+    // 1) map the the array to get an array with only price
+    // 2) use the reduce method to add up the different prices
+    const map = arr.map(({price}) => price)
+    const totalSum = map.reduce((a,b) => a + b)
+    answerEl.innerHTML +=`
+    <p>[${map.join(', ')}]</p>
+    <p>${totalSum.toFixed(2)}</p>`
+    return totalSum.toFixed(2)
+}
+
+console.log(total(shoppingCart));
