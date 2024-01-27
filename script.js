@@ -1,52 +1,49 @@
 const answerEl = document.body
 const questionEl = document.getElementById("question")
-/* Find Free Podcasts 
-
-We have a list of podcasts and need the ability to filter by only
-podcasts which are free.
-
-Write a function that takes in the podcast data and returns an new
-array of only those podcasts which are free.
-
-Additionally, your new array should return only 
-objects containing only the podcast title, rating, and whether or 
-not it is paid. 
-
-Expected output: 
-[
-    {title: "Scrimba Podcast", rating: 10, paid: false}, 
-    {title: "Something about Witches", rating: 8, paid: false}, 
-    {title: "Coding Corner", rating: 9, paid: false}
-]
+/*
+   It's the day after Halloween 🎃 and all the candy is on sale!
+   
+   To buy up all the candy, use map() and filter() to put all the
+   candy into a `shoppingCart` array. 
+   
+   The new array should contain only the item and the price, like
+   this: 
+   
+   Expected output: 
+   [
+       {item: "🍭", price: 2.99},
+       {item: "🍫", price: 1.99}, 
+       {item: "🍬", price: 0.89}
+    ]
 */
 
-questionEl.innerHTML += `Write a function that takes in the podcast data and returns an new
-array of only those podcasts which are free.
+questionEl.innerHTML += `It's the day after Halloween 🎃 and all the candy is on sale!
+<br /><br />
+To buy up all the candy, use map() and filter() to put all the
+candy into a 'shoppingCart' array. 
+<br /><br />
+The new array should contain only the item and the price, like
+this: 
 <br /><br />
 Expected output: 
 [
-    {title: "Scrimba Podcast", rating: 10, paid: false}, 
-    {title: "Something about Witches", rating: 8, paid: false}, 
-    {title: "Coding Corner", rating: 9, paid: false}
-] 
+    {item: "🍭", price: 2.99},
+    {item: "🍫", price: 1.99}, 
+    {item: "🍬", price: 0.89}
+ ]
 `
-import podcasts from "./data.js";
+import products from "./data.js";
 
+function getSaleItems(data){
+    const filtering = data.filter(d => d.type === 'sweet')
+    const shoppingCart= filtering.map(d=> {
+        return {
+            item: d.item,
+            price: `$${d.price}`
+        }
+    })
+    answerEl.innerHTML +=`<p>${JSON.stringify(shoppingCart)}</p>`
+    return shoppingCart
+};
 
-function getFreePodcasts(data){
-    // 1) loop through the array
-    // 2) return the values that you need
-    // 3) filter the free podcasts
-   const loopingData = data.map(d => {
-    return {
-        title: d.title,
-        rating: d.rating,
-        paid: d.paid
-    }
-   })
-   const filtering= loopingData.filter(loop=> loop.paid === false)
-   answerEl.innerHTML += `<p>${JSON.stringify(filtering)}</p>`
-   return filtering
-}
-
-console.log(getFreePodcasts(podcasts))
+console.log(getSaleItems(products))
