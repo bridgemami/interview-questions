@@ -18,7 +18,7 @@ Expected output:
 
 questionEl.innerHTML += `Write a function that takes in the media data and returns
 a flat array of unique tags. 
-<br />
+<br /><br />
 Expected output: 
 ["supernatural", "horror", "drama",
 "fantasy", "reality", "home improvement", "comedy", "sci-fi", "adventure"]
