@@ -32,7 +32,7 @@ Then log the item and the price to the console:
 import products from "./data.js";
 
 function sortProducts(data){
-   const sorting = data.sort((a,b) => a.price - b.price)
+    const sorting= data.sort((a,b) => a.price - b.price)
    answerEl.innerHTML += `<p>${JSON.stringify(sorting)}</p>`
    return sorting
 }
