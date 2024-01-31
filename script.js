@@ -19,13 +19,13 @@ import shoppingCart from "./data.js";
 
 function totalSavory(arr){
     const totalSum = arr.reduce((a,b) => {
-        if(b.type=== 'savory'){
-            a += b.price
+        if(b.type === 'savory') {
+             a += b.price
         }
         return a
     },0)
    
-    answerEl.innerHTML += `<p>${newArray.join(', ')}</p>
+    answerEl.innerHTML += `<p>${JSON.stringify(arr)}</p>
     <p>Total is $${totalSum}.
    `
     return totalSum
