@@ -1,59 +1,27 @@
 export default [
     {
-        id: 1,
-        title: "Scrimba Podcast", 
-        duration: 50, 
-        tags: ["education", "jobs", "technology"], 
-        hosts: ["Alex Booker"], 
-        rating: 10,
-        genre: "education",
-        paid: false
+       post: "A lot of you have asked about my morning skin care routine...",
+       likes: 348
     },
     {
-        id: 2,
-        title: "Crime Fan", 
-        duration: 150, 
-        tags: ["crime", "entertainment", "mature"], 
-        hosts: ["Bob Smith", "Camilla Lambert"], 
-        genre: "true crime",
-        rating: 5, 
-        paid: true
+       post: "New Year, new me. #blessed",
+       likes: 102
     },
     {
-        id: 3,
-        title: "Mythical Creatures", 
-        duration: 99, 
-        tags: ["entertainment", "general", "unicorns"], 
-        hosts: ["Esmerelda Shelley", "Duke Dukington", "Felix the Cat"], 
-        genre: "fantasy",
-        rating: 8,
-        paid: true
+       post: "Sunday by the pool 🌴 #vibes #mood #hotdoglegs",
+       likes: 544
     },
     {
-        title: "Crime Crime Crime", 
-        duration: 70, 
-        tags: ["crime", "entertainment", "mature"], 
-        hosts: ["Jessica Jones", "Humphrey Bogart", "Inspector Gadget"], 
-        genre: "true crime",
-        rating: 6, 
-        paid: true
+       post: "Here are my top 5 #notsponsored unbiased dry shampoo recs...",
+       likes: 745
     },
     {
-        title: "Something about Witches", 
-        duration: 35, 
-        tags: ["fantasy", "entertainment"], 
-        hosts: ["Frewin Wyrm", "Evanora Highmore"], 
-        genre: "fantasy",
-        rating: 8,
-        paid: false
+       post: "Last day in Hawaii! The tans will fade but the memories will last forever #holidays #foreverhawaii #blessed #followme",
+       likes: 412
     },
     {
-        title: "Coding Corner", 
-        duration: 55, 
-        tags: ["education", "jobs", "technology"], 
-        hosts: ["Treasure Porth", "Guil Hernandez", "Tom Chant"], 
-        genre: "education",
-        rating: 9,
-        paid: false
+       post: "Leg day #summerbody2022 #gymshark #beachworkout",
+       likes: 275
     },
 ]
+  
