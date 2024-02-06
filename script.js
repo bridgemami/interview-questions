@@ -1,59 +1,29 @@
 const answerEl = document.body
 const questionEl = document.getElementById("question")
-/* Find anagrams in an array   
+/*
+   Oh no, our emoji flower bed is infested with mammals, trees and leaves!
+   Without changing the API url, write a function to transform your 
+   data before it's displayed. The function should eliminate
+   everything but bugs and flowers. Use your function in the API call.  
+   
+   Hint: Be sure to console the data to see what properties can help you do this!
+*/ 
 
-When two words have the exact same letters, they are anagrams. 
-
-Each item in the anagrams array is an anagram of a Scrimba teacher's
-first and last name, plus the phrase "Scrimba teacher". 
-
-Write a function to determine which strings in the array are 
-anagrams of "Bob Ziroll Scrimba Teacher".
-
-Your function should take two parameters: the phrase you want to compare to
-the anagrams, and an array of anagrams. The function should return
-a new array of anagrams that match the phrase. 
-
-Example input: treat, ["tater", "tree", "teart", "tetra", "heart", "hamster"]
-Example output: ["tater", "teart", "tetra"]
-
-Bonus: What other teachers are represented in these anagrams? 
- */
-
-questionEl.innerHTML += `Write a function to determine which strings in the array are 
-anagrams of "Bob Ziroll Scrimba Teacher". 
+questionEl.innerHTML += `The function should eliminate everything but bugs and flowers. Use your function in the API call.  
 <br /><br />
-Example input: treat, ["tater", "tree", "teart", "tetra", "heart", "hamster"]<br /><br />
-Example output: ["tater", "teart", "tetra"]
 `
 
-const anagrams = [
-  "moz biblical torchbearers",  
-  "it's razorbill beachcomber", 
-  "och mcrobbie trailblazers", 
-  "bib chorizo cellarmaster", 
-  "thor scribble carbimazole", 
-  "zilla borscht abercrombie", 
-  "brazil scorcher batmobile", 
-  "dame shelburne characterizing", 
-  "uber englishman characterized", 
-  "agnes rhumbline characterized", 
-  "rehab scrutinized charlemagne", 
-  "dreams zurich interchangeable", 
-  "bam hamster technocratic", 
-  "mechatronic masterbatch", 
-  "bam ratchet mechatronics"
-]
+import animals from './data.js'
+const flowerBed = document.querySelector('.emoji-flower-bed');
+function clearTheGarden(arr){
+  const newArr = []
+   arr.map(a => {
+      if(a.group === 'plant flower' || a.group === 'animal bug') {
+        flowerBed.innerHTML += `<li>${a.htmlCode[0]}</li>`;
+        return newArr.push(a)
+      }
+    })
+    return newArr
+  }
 
-function sorting (string) {
-const sortString = string.toLowerCase().split('').sort().join('').trim()
-return sortString}
-
-function isAnagramInArray(anagram, arr){
-  const findingAnagram = arr.filter(a => {
-    return sorting(a) === sorting(anagram)
-  })
-  return findingAnagram
-}
-console.log(isAnagramInArray("Bob Ziroll Scrimba Teacher", anagrams));
-console.log(isAnagramInArray('treat', ["tater", "tree", "teart", "tetra", "heart", "hamster"]));
+console.log(clearTheGarden(animals))
