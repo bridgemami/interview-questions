@@ -1,78 +1,59 @@
 const answerEl = document.body
 const questionEl = document.getElementById("question")
-/* 🌴 Save the Weekend 🌴
+/* Find anagrams in an array   
 
-Your best friend is a copywriter who writes product descriptions 
-for a living. You want to use your hacking skills to help them 
-automate their job so you both can spend the weekend on a 
-tropical island. 
+When two words have the exact same letters, they are anagrams. 
 
-Use array methods and the existing podcast data to write a function that
-can generate a description for each podcast. 
+Each item in the anagrams array is an anagram of a Scrimba teacher's
+first and last name, plus the phrase "Scrimba teacher". 
 
-Add the description as a new property on each podcast object, and return
-a new podcast array where each podcast has a description. 
+Write a function to determine which strings in the array are 
+anagrams of "Bob Ziroll Scrimba Teacher".
 
-Each description should look like this: 
-[
-    {
-        id: 1,
-        title: "Scrimba Podcast", 
-        ...
-        description: "Scrimba Podcast is a 50 minute education podcast hosted 
-        by Alex Booker."
-    }
-    ...
-]
+Your function should take two parameters: the phrase you want to compare to
+the anagrams, and an array of anagrams. The function should return
+a new array of anagrams that match the phrase. 
 
-If the podcast has more than one host, you can display only the first host.
+Example input: treat, ["tater", "tree", "teart", "tetra", "heart", "hamster"]
+Example output: ["tater", "teart", "tetra"]
 
-Stretch goal: Display all three hosts in the description, seperated with commas: 
+Bonus: What other teachers are represented in these anagrams? 
+ */
 
-Example description: "Coding Corner is a 55 minute education podcast hosted by Treasure Porth, Guil Hernandez, and Tom Chant."
-*/ 
-
-questionEl.innerHTML += `Use array methods and the existing podcast data to write a function that
-can generate a description for each podcast. 
+questionEl.innerHTML += `Write a function to determine which strings in the array are 
+anagrams of "Bob Ziroll Scrimba Teacher". 
 <br /><br />
-Add the description as a new property on each podcast object, and return
-a new podcast array where each podcast has a description.
+Example input: treat, ["tater", "tree", "teart", "tetra", "heart", "hamster"]<br /><br />
+Example output: ["tater", "teart", "tetra"]
 `
 
-import podcasts from "./data.js";
+const anagrams = [
+  "moz biblical torchbearers",  
+  "it's razorbill beachcomber", 
+  "och mcrobbie trailblazers", 
+  "bib chorizo cellarmaster", 
+  "thor scribble carbimazole", 
+  "zilla borscht abercrombie", 
+  "brazil scorcher batmobile", 
+  "dame shelburne characterizing", 
+  "uber englishman characterized", 
+  "agnes rhumbline characterized", 
+  "rehab scrutinized charlemagne", 
+  "dreams zurich interchangeable", 
+  "bam hamster technocratic", 
+  "mechatronic masterbatch", 
+  "bam ratchet mechatronics"
+]
 
-function flattening (arr) {
-  if(arr.length === 1) {
-    return arr.join(' ')
-  }
-  else if (arr.length === 2) {
-    return arr.join(' and ')
-  }
-  else {
-    return arr.map(a => {
-      if(a === arr[arr.length -2]){
-        return a.concat(', and ')
-      }
-      if(a === arr[arr.length-1]){
-      return a
-    }
-        else {
-          return `${a}, `
-        }
-    }).join('')
-  }
+function sorting (string) {
+const sortString = string.toLowerCase().split('').sort().join('').trim()
+return sortString}
+
+function isAnagramInArray(anagram, arr){
+  const findingAnagram = arr.filter(a => {
+    return sorting(a) === sorting(anagram)
+  })
+  return findingAnagram
 }
-
-function createDescriptionsFor(data){
-   const description = data.map(db => {
-    return {...db,
-            description: `${db.title} is a ${db.duration} minute ${db.tags[0]} podcast hosted by ${flattening(db.hosts)}.`
-          }
-   })
-   const list = description.map(db => `<p>${db.description}</p>`)
-   answerEl.innerHTML += `<section>${list.join(' ')}</section>`
-    return description
-}
-
-console.log(createDescriptionsFor(podcasts))
-
+console.log(isAnagramInArray("Bob Ziroll Scrimba Teacher", anagrams));
+console.log(isAnagramInArray('treat', ["tater", "tree", "teart", "tetra", "heart", "hamster"]));
