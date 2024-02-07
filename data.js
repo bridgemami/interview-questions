@@ -1,1179 +1,981 @@
-export default [
+export default[
     {
-    "name": "monkey face",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "grapes",
+    "category": "food and drink",
+    "group": "food fruit",
     "htmlCode": [
-    "&#128053;"
+    "&#127815;"
     ],
     "unicode": [
-    "U+1F435"
+    "U+1F347"
     ]
     },
     {
-    "name": "monkey",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "melon",
+    "category": "food and drink",
+    "group": "food fruit",
     "htmlCode": [
-    "&#128018;"
+    "&#127816;"
     ],
     "unicode": [
-    "U+1F412"
+    "U+1F348"
     ]
     },
     {
-    "name": "gorilla",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "watermelon",
+    "category": "food and drink",
+    "group": "food fruit",
     "htmlCode": [
-    "&#129421;"
+    "&#127817;"
     ],
     "unicode": [
-    "U+1F98D"
+    "U+1F349"
     ]
     },
     {
-    "name": "dog face",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "tangerine",
+    "category": "food and drink",
+    "group": "food fruit",
     "htmlCode": [
-    "&#128054;"
+    "&#127818;"
     ],
     "unicode": [
-    "U+1F436"
+    "U+1F34A"
     ]
     },
     {
-    "name": "dog",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "lemon",
+    "category": "food and drink",
+    "group": "food fruit",
     "htmlCode": [
-    "&#128021;"
+    "&#127819;"
     ],
     "unicode": [
-    "U+1F415"
+    "U+1F34B"
     ]
     },
     {
-    "name": "poodle",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "banana",
+    "category": "food and drink",
+    "group": "food fruit",
     "htmlCode": [
-    "&#128041;"
+    "&#127820;"
     ],
     "unicode": [
-    "U+1F429"
+    "U+1F34C"
     ]
     },
     {
-    "name": "wolf face",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "pineapple",
+    "category": "food and drink",
+    "group": "food fruit",
     "htmlCode": [
-    "&#128058;"
+    "&#127821;"
     ],
     "unicode": [
-    "U+1F43A"
+    "U+1F34D"
     ]
     },
     {
-    "name": "fox face",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "red apple",
+    "category": "food and drink",
+    "group": "food fruit",
     "htmlCode": [
-    "&#129418;"
+    "&#127822;"
     ],
     "unicode": [
-    "U+1F98A"
+    "U+1F34E"
     ]
     },
     {
-    "name": "cat face",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "green apple",
+    "category": "food and drink",
+    "group": "food fruit",
     "htmlCode": [
-    "&#128049;"
+    "&#127823;"
     ],
     "unicode": [
-    "U+1F431"
+    "U+1F34F"
     ]
     },
     {
-    "name": "cat",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "pear",
+    "category": "food and drink",
+    "group": "food fruit",
     "htmlCode": [
-    "&#128008;"
+    "&#127824;"
     ],
     "unicode": [
-    "U+1F408"
+    "U+1F350"
     ]
     },
     {
-    "name": "lion face",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "peach",
+    "category": "food and drink",
+    "group": "food fruit",
     "htmlCode": [
-    "&#129409;"
+    "&#127825;"
     ],
     "unicode": [
-    "U+1F981"
+    "U+1F351"
     ]
     },
     {
-    "name": "tiger face",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "cherries",
+    "category": "food and drink",
+    "group": "food fruit",
     "htmlCode": [
-    "&#128047;"
+    "&#127826;"
     ],
     "unicode": [
-    "U+1F42F"
+    "U+1F352"
     ]
     },
     {
-    "name": "tiger",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "strawberry",
+    "category": "food and drink",
+    "group": "food fruit",
     "htmlCode": [
-    "&#128005;"
+    "&#127827;"
     ],
     "unicode": [
-    "U+1F405"
+    "U+1F353"
     ]
     },
     {
-    "name": "leopard",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "kiwifruit",
+    "category": "food and drink",
+    "group": "food fruit",
     "htmlCode": [
-    "&#128006;"
+    "&#129373;"
     ],
     "unicode": [
-    "U+1F406"
+    "U+1F95D"
     ]
     },
     {
-    "name": "horse face",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "tomato",
+    "category": "food and drink",
+    "group": "food fruit",
     "htmlCode": [
-    "&#128052;"
+    "&#127813;"
     ],
     "unicode": [
-    "U+1F434"
+    "U+1F345"
     ]
     },
     {
-    "name": "horse",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "avocado",
+    "category": "food and drink",
+    "group": "food vegetable",
     "htmlCode": [
-    "&#128014;"
+    "&#129361;"
     ],
     "unicode": [
-    "U+1F40E"
+    "U+1F951"
     ]
     },
     {
-    "name": "deer",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "aubergine ≊ eggplant",
+    "category": "food and drink",
+    "group": "food vegetable",
     "htmlCode": [
-    "&#129420;"
+    "&#127814;"
     ],
     "unicode": [
-    "U+1F98C"
+    "U+1F346"
     ]
     },
     {
-    "name": "unicorn face",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "potato",
+    "category": "food and drink",
+    "group": "food vegetable",
     "htmlCode": [
-    "&#129412;"
+    "&#129364;"
     ],
     "unicode": [
-    "U+1F984"
+    "U+1F954"
     ]
     },
     {
-    "name": "cow face",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "carrot",
+    "category": "food and drink",
+    "group": "food vegetable",
     "htmlCode": [
-    "&#128046;"
+    "&#129365;"
     ],
     "unicode": [
-    "U+1F42E"
+    "U+1F955"
     ]
     },
     {
-    "name": "ox",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "ear of maize ≊ ear of corn",
+    "category": "food and drink",
+    "group": "food vegetable",
     "htmlCode": [
-    "&#128002;"
+    "&#127805;"
     ],
     "unicode": [
-    "U+1F402"
+    "U+1F33D"
     ]
     },
     {
-    "name": "water buffalo",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "hot pepper",
+    "category": "food and drink",
+    "group": "food vegetable",
     "htmlCode": [
-    "&#128003;"
+    "&#127798;"
     ],
     "unicode": [
-    "U+1F403"
+    "U+1F336"
     ]
     },
     {
-    "name": "cow",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "cucumber",
+    "category": "food and drink",
+    "group": "food vegetable",
     "htmlCode": [
-    "&#128004;"
+    "&#129362;"
     ],
     "unicode": [
-    "U+1F404"
+    "U+1F952"
     ]
     },
     {
-    "name": "pig face",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "mushroom",
+    "category": "food and drink",
+    "group": "food vegetable",
     "htmlCode": [
-    "&#128055;"
+    "&#127812;"
     ],
     "unicode": [
-    "U+1F437"
+    "U+1F344"
     ]
     },
     {
-    "name": "pig",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "peanuts",
+    "category": "food and drink",
+    "group": "food vegetable",
     "htmlCode": [
-    "&#128022;"
+    "&#129372;"
     ],
     "unicode": [
-    "U+1F416"
+    "U+1F95C"
     ]
     },
     {
-    "name": "boar",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "chestnut",
+    "category": "food and drink",
+    "group": "food vegetable",
     "htmlCode": [
-    "&#128023;"
+    "&#127792;"
     ],
     "unicode": [
-    "U+1F417"
+    "U+1F330"
     ]
     },
     {
-    "name": "pig nose",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "bread",
+    "category": "food and drink",
+    "group": "food prepared",
     "htmlCode": [
-    "&#128061;"
+    "&#127838;"
     ],
     "unicode": [
-    "U+1F43D"
+    "U+1F35E"
     ]
     },
     {
-    "name": "ram",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "croissant",
+    "category": "food and drink",
+    "group": "food prepared",
     "htmlCode": [
-    "&#128015;"
+    "&#129360;"
     ],
     "unicode": [
-    "U+1F40F"
+    "U+1F950"
     ]
     },
     {
-    "name": "sheep",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "baguette bread",
+    "category": "food and drink",
+    "group": "food prepared",
     "htmlCode": [
-    "&#128017;"
+    "&#129366;"
     ],
     "unicode": [
-    "U+1F411"
+    "U+1F956"
     ]
     },
     {
-    "name": "goat",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "pancakes",
+    "category": "food and drink",
+    "group": "food prepared",
     "htmlCode": [
-    "&#128016;"
+    "&#129374;"
     ],
     "unicode": [
-    "U+1F410"
+    "U+1F95E"
     ]
     },
     {
-    "name": "dromedary camel ≊ camel",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "cheese wedge",
+    "category": "food and drink",
+    "group": "food prepared",
     "htmlCode": [
-    "&#128042;"
+    "&#129472;"
     ],
     "unicode": [
-    "U+1F42A"
+    "U+1F9C0"
     ]
     },
     {
-    "name": "bactrian camel ≊ two-hump camel",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "meat on bone",
+    "category": "food and drink",
+    "group": "food prepared",
     "htmlCode": [
-    "&#128043;"
+    "&#127830;"
     ],
     "unicode": [
-    "U+1F42B"
+    "U+1F356"
     ]
     },
     {
-    "name": "elephant",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "poultry leg",
+    "category": "food and drink",
+    "group": "food prepared",
     "htmlCode": [
-    "&#128024;"
+    "&#127831;"
     ],
     "unicode": [
-    "U+1F418"
+    "U+1F357"
     ]
     },
     {
-    "name": "rhinoceros",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "bacon",
+    "category": "food and drink",
+    "group": "food prepared",
     "htmlCode": [
-    "&#129423;"
+    "&#129363;"
     ],
     "unicode": [
-    "U+1F98F"
+    "U+1F953"
     ]
     },
     {
-    "name": "mouse face",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "hamburger",
+    "category": "food and drink",
+    "group": "food prepared",
     "htmlCode": [
-    "&#128045;"
+    "&#127828;"
     ],
     "unicode": [
-    "U+1F42D"
+    "U+1F354"
     ]
     },
     {
-    "name": "mouse",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "french fries",
+    "category": "food and drink",
+    "group": "food prepared",
     "htmlCode": [
-    "&#128001;"
+    "&#127839;"
     ],
     "unicode": [
-    "U+1F401"
+    "U+1F35F"
     ]
     },
     {
-    "name": "rat",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "slice of pizza ≊ pizza",
+    "category": "food and drink",
+    "group": "food prepared",
     "htmlCode": [
-    "&#128000;"
+    "&#127829;"
     ],
     "unicode": [
-    "U+1F400"
+    "U+1F355"
     ]
     },
     {
-    "name": "hamster face",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "hot dog",
+    "category": "food and drink",
+    "group": "food prepared",
     "htmlCode": [
-    "&#128057;"
+    "&#127789;"
     ],
     "unicode": [
-    "U+1F439"
+    "U+1F32D"
     ]
     },
     {
-    "name": "rabbit face",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "taco",
+    "category": "food and drink",
+    "group": "food prepared",
     "htmlCode": [
-    "&#128048;"
+    "&#127790;"
     ],
     "unicode": [
-    "U+1F430"
+    "U+1F32E"
     ]
     },
     {
-    "name": "rabbit",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "burrito",
+    "category": "food and drink",
+    "group": "food prepared",
     "htmlCode": [
-    "&#128007;"
+    "&#127791;"
     ],
     "unicode": [
-    "U+1F407"
+    "U+1F32F"
     ]
     },
     {
-    "name": "chipmunk",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "stuffed flatbread",
+    "category": "food and drink",
+    "group": "food prepared",
     "htmlCode": [
-    "&#128063;"
+    "&#129369;"
     ],
     "unicode": [
-    "U+1F43F"
+    "U+1F959"
     ]
     },
     {
-    "name": "bat",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "egg",
+    "category": "food and drink",
+    "group": "food prepared",
     "htmlCode": [
-    "&#129415;"
+    "&#129370;"
     ],
     "unicode": [
-    "U+1F987"
+    "U+1F95A"
     ]
     },
     {
-    "name": "bear face",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "cooking",
+    "category": "food and drink",
+    "group": "food prepared",
     "htmlCode": [
-    "&#128059;"
+    "&#127859;"
     ],
     "unicode": [
-    "U+1F43B"
+    "U+1F373"
     ]
     },
     {
-    "name": "koala",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "shallow pan of food",
+    "category": "food and drink",
+    "group": "food prepared",
     "htmlCode": [
-    "&#128040;"
+    "&#129368;"
     ],
     "unicode": [
-    "U+1F428"
+    "U+1F958"
     ]
     },
     {
-    "name": "panda face",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "pot of food",
+    "category": "food and drink",
+    "group": "food prepared",
     "htmlCode": [
-    "&#128060;"
+    "&#127858;"
     ],
     "unicode": [
-    "U+1F43C"
+    "U+1F372"
     ]
     },
     {
-    "name": "paw prints",
-    "category": "animals and nature",
-    "group": "animal mammal",
+    "name": "green salad",
+    "category": "food and drink",
+    "group": "food prepared",
     "htmlCode": [
-    "&#128062;"
+    "&#129367;"
     ],
     "unicode": [
-    "U+1F43E"
+    "U+1F957"
     ]
     },
     {
-    "name": "turkey",
-    "category": "animals and nature",
-    "group": "animal bird",
+    "name": "popcorn",
+    "category": "food and drink",
+    "group": "food prepared",
     "htmlCode": [
-    "&#129411;"
+    "&#127871;"
     ],
     "unicode": [
-    "U+1F983"
+    "U+1F37F"
     ]
     },
     {
-    "name": "chicken",
-    "category": "animals and nature",
-    "group": "animal bird",
+    "name": "bento box",
+    "category": "food and drink",
+    "group": "food asian",
     "htmlCode": [
-    "&#128020;"
+    "&#127857;"
     ],
     "unicode": [
-    "U+1F414"
+    "U+1F371"
     ]
     },
     {
-    "name": "rooster",
-    "category": "animals and nature",
-    "group": "animal bird",
+    "name": "rice cracker",
+    "category": "food and drink",
+    "group": "food asian",
     "htmlCode": [
-    "&#128019;"
+    "&#127832;"
     ],
     "unicode": [
-    "U+1F413"
+    "U+1F358"
     ]
     },
     {
-    "name": "hatching chick",
-    "category": "animals and nature",
-    "group": "animal bird",
+    "name": "rice ball",
+    "category": "food and drink",
+    "group": "food asian",
     "htmlCode": [
-    "&#128035;"
+    "&#127833;"
     ],
     "unicode": [
-    "U+1F423"
+    "U+1F359"
     ]
     },
     {
-    "name": "baby chick",
-    "category": "animals and nature",
-    "group": "animal bird",
+    "name": "cooked rice",
+    "category": "food and drink",
+    "group": "food asian",
     "htmlCode": [
-    "&#128036;"
+    "&#127834;"
     ],
     "unicode": [
-    "U+1F424"
+    "U+1F35A"
     ]
     },
     {
-    "name": "front-facing baby chick",
-    "category": "animals and nature",
-    "group": "animal bird",
+    "name": "curry and rice ≊ curry rice",
+    "category": "food and drink",
+    "group": "food asian",
     "htmlCode": [
-    "&#128037;"
+    "&#127835;"
     ],
     "unicode": [
-    "U+1F425"
+    "U+1F35B"
     ]
     },
     {
-    "name": "bird",
-    "category": "animals and nature",
-    "group": "animal bird",
+    "name": "steaming bowl",
+    "category": "food and drink",
+    "group": "food asian",
     "htmlCode": [
-    "&#128038;"
+    "&#127836;"
     ],
     "unicode": [
-    "U+1F426"
+    "U+1F35C"
     ]
     },
     {
-    "name": "penguin",
-    "category": "animals and nature",
-    "group": "animal bird",
+    "name": "spaghetti",
+    "category": "food and drink",
+    "group": "food asian",
     "htmlCode": [
-    "&#128039;"
+    "&#127837;"
     ],
     "unicode": [
-    "U+1F427"
+    "U+1F35D"
     ]
     },
     {
-    "name": "dove of peace ≊ dove",
-    "category": "animals and nature",
-    "group": "animal bird",
+    "name": "roasted sweet potato",
+    "category": "food and drink",
+    "group": "food asian",
     "htmlCode": [
-    "&#128330;"
+    "&#127840;"
     ],
     "unicode": [
-    "U+1F54A"
+    "U+1F360"
     ]
     },
     {
-    "name": "eagle",
-    "category": "animals and nature",
-    "group": "animal bird",
+    "name": "oden",
+    "category": "food and drink",
+    "group": "food asian",
     "htmlCode": [
-    "&#129413;"
+    "&#127842;"
     ],
     "unicode": [
-    "U+1F985"
+    "U+1F362"
     ]
     },
     {
-    "name": "duck",
-    "category": "animals and nature",
-    "group": "animal bird",
+    "name": "sushi",
+    "category": "food and drink",
+    "group": "food asian",
     "htmlCode": [
-    "&#129414;"
+    "&#127843;"
     ],
     "unicode": [
-    "U+1F986"
+    "U+1F363"
     ]
     },
     {
-    "name": "owl",
-    "category": "animals and nature",
-    "group": "animal bird",
+    "name": "fried shrimp",
+    "category": "food and drink",
+    "group": "food asian",
     "htmlCode": [
-    "&#129417;"
+    "&#127844;"
     ],
     "unicode": [
-    "U+1F989"
+    "U+1F364"
     ]
     },
     {
-    "name": "frog face",
-    "category": "animals and nature",
-    "group": "animal amphibian",
+    "name": "fish cake with swirl design ≊ fish cake with swirl",
+    "category": "food and drink",
+    "group": "food asian",
     "htmlCode": [
-    "&#128056;"
+    "&#127845;"
     ],
     "unicode": [
-    "U+1F438"
+    "U+1F365"
     ]
     },
     {
-    "name": "crocodile",
-    "category": "animals and nature",
-    "group": "animal reptile",
+    "name": "dango",
+    "category": "food and drink",
+    "group": "food asian",
     "htmlCode": [
-    "&#128010;"
+    "&#127841;"
     ],
     "unicode": [
-    "U+1F40A"
+    "U+1F361"
     ]
     },
     {
-    "name": "turtle",
-    "category": "animals and nature",
-    "group": "animal reptile",
+    "name": "soft ice cream",
+    "category": "food and drink",
+    "group": "food sweet",
     "htmlCode": [
-    "&#128034;"
+    "&#127846;"
     ],
     "unicode": [
-    "U+1F422"
+    "U+1F366"
     ]
     },
     {
-    "name": "lizard",
-    "category": "animals and nature",
-    "group": "animal reptile",
+    "name": "shaved ice",
+    "category": "food and drink",
+    "group": "food sweet",
     "htmlCode": [
-    "&#129422;"
+    "&#127847;"
     ],
     "unicode": [
-    "U+1F98E"
+    "U+1F367"
     ]
     },
     {
-    "name": "snake",
-    "category": "animals and nature",
-    "group": "animal reptile",
+    "name": "ice cream",
+    "category": "food and drink",
+    "group": "food sweet",
     "htmlCode": [
-    "&#128013;"
+    "&#127848;"
     ],
     "unicode": [
-    "U+1F40D"
+    "U+1F368"
     ]
     },
     {
-    "name": "dragon face",
-    "category": "animals and nature",
-    "group": "animal reptile",
+    "name": "doughnut",
+    "category": "food and drink",
+    "group": "food sweet",
     "htmlCode": [
-    "&#128050;"
+    "&#127849;"
     ],
     "unicode": [
-    "U+1F432"
+    "U+1F369"
     ]
     },
     {
-    "name": "dragon",
-    "category": "animals and nature",
-    "group": "animal reptile",
+    "name": "cookie",
+    "category": "food and drink",
+    "group": "food sweet",
     "htmlCode": [
-    "&#128009;"
+    "&#127850;"
     ],
     "unicode": [
-    "U+1F409"
+    "U+1F36A"
     ]
     },
     {
-    "name": "spouting whale",
-    "category": "animals and nature",
-    "group": "animal marine",
+    "name": "birthday cake",
+    "category": "food and drink",
+    "group": "food sweet",
     "htmlCode": [
-    "&#128051;"
+    "&#127874;"
     ],
     "unicode": [
-    "U+1F433"
+    "U+1F382"
     ]
     },
     {
-    "name": "whale",
-    "category": "animals and nature",
-    "group": "animal marine",
+    "name": "shortcake",
+    "category": "food and drink",
+    "group": "food sweet",
     "htmlCode": [
-    "&#128011;"
+    "&#127856;"
     ],
     "unicode": [
-    "U+1F40B"
+    "U+1F370"
     ]
     },
     {
-    "name": "dolphin",
-    "category": "animals and nature",
-    "group": "animal marine",
+    "name": "chocolate bar",
+    "category": "food and drink",
+    "group": "food sweet",
     "htmlCode": [
-    "&#128044;"
+    "&#127851;"
     ],
     "unicode": [
-    "U+1F42C"
+    "U+1F36B"
     ]
     },
     {
-    "name": "fish",
-    "category": "animals and nature",
-    "group": "animal marine",
+    "name": "candy",
+    "category": "food and drink",
+    "group": "food sweet",
     "htmlCode": [
-    "&#128031;"
+    "&#127852;"
     ],
     "unicode": [
-    "U+1F41F"
+    "U+1F36C"
     ]
     },
     {
-    "name": "tropical fish",
-    "category": "animals and nature",
-    "group": "animal marine",
+    "name": "lollipop",
+    "category": "food and drink",
+    "group": "food sweet",
     "htmlCode": [
-    "&#128032;"
+    "&#127853;"
     ],
     "unicode": [
-    "U+1F420"
+    "U+1F36D"
     ]
     },
     {
-    "name": "blowfish",
-    "category": "animals and nature",
-    "group": "animal marine",
+    "name": "custard",
+    "category": "food and drink",
+    "group": "food sweet",
     "htmlCode": [
-    "&#128033;"
+    "&#127854;"
     ],
     "unicode": [
-    "U+1F421"
+    "U+1F36E"
     ]
     },
     {
-    "name": "shark",
-    "category": "animals and nature",
-    "group": "animal marine",
+    "name": "honey pot",
+    "category": "food and drink",
+    "group": "food sweet",
     "htmlCode": [
-    "&#129416;"
+    "&#127855;"
     ],
     "unicode": [
-    "U+1F988"
+    "U+1F36F"
     ]
     },
     {
-    "name": "octopus",
-    "category": "animals and nature",
-    "group": "animal marine",
+    "name": "baby bottle",
+    "category": "food and drink",
+    "group": "drink",
     "htmlCode": [
-    "&#128025;"
+    "&#127868;"
     ],
     "unicode": [
-    "U+1F419"
+    "U+1F37C"
     ]
     },
     {
-    "name": "spiral shell",
-    "category": "animals and nature",
-    "group": "animal marine",
+    "name": "glass of milk",
+    "category": "food and drink",
+    "group": "drink",
     "htmlCode": [
-    "&#128026;"
+    "&#129371;"
     ],
     "unicode": [
-    "U+1F41A"
+    "U+1F95B"
     ]
     },
     {
-    "name": "crab",
-    "category": "animals and nature",
-    "group": "animal marine",
+    "name": "hot beverage",
+    "category": "food and drink",
+    "group": "drink",
     "htmlCode": [
-    "&#129408;"
+    "&#9749;"
     ],
     "unicode": [
-    "U+1F980"
+    "U+2615"
     ]
     },
     {
-    "name": "shrimp",
-    "category": "animals and nature",
-    "group": "animal marine",
+    "name": "teacup without handle",
+    "category": "food and drink",
+    "group": "drink",
     "htmlCode": [
-    "&#129424;"
+    "&#127861;"
     ],
     "unicode": [
-    "U+1F990"
+    "U+1F375"
     ]
     },
     {
-    "name": "squid",
-    "category": "animals and nature",
-    "group": "animal marine",
+    "name": "sake bottle and cup ≊ sake",
+    "category": "food and drink",
+    "group": "drink",
     "htmlCode": [
-    "&#129425;"
+    "&#127862;"
     ],
     "unicode": [
-    "U+1F991"
+    "U+1F376"
     ]
     },
     {
-    "name": "butterfly",
-    "category": "animals and nature",
-    "group": "animal bug",
+    "name": "bottle with popping cork",
+    "category": "food and drink",
+    "group": "drink",
     "htmlCode": [
-    "&#129419;"
+    "&#127870;"
     ],
     "unicode": [
-    "U+1F98B"
+    "U+1F37E"
     ]
     },
     {
-    "name": "snail",
-    "category": "animals and nature",
-    "group": "animal bug",
+    "name": "wine glass",
+    "category": "food and drink",
+    "group": "drink",
     "htmlCode": [
-    "&#128012;"
+    "&#127863;"
     ],
     "unicode": [
-    "U+1F40C"
+    "U+1F377"
     ]
     },
     {
-    "name": "bug",
-    "category": "animals and nature",
-    "group": "animal bug",
+    "name": "cocktail glass",
+    "category": "food and drink",
+    "group": "drink",
     "htmlCode": [
-    "&#128027;"
+    "&#127864;"
     ],
     "unicode": [
-    "U+1F41B"
+    "U+1F378"
     ]
     },
     {
-    "name": "ant",
-    "category": "animals and nature",
-    "group": "animal bug",
+    "name": "tropical drink",
+    "category": "food and drink",
+    "group": "drink",
     "htmlCode": [
-    "&#128028;"
+    "&#127865;"
     ],
     "unicode": [
-    "U+1F41C"
+    "U+1F379"
     ]
     },
     {
-    "name": "honeybee",
-    "category": "animals and nature",
-    "group": "animal bug",
+    "name": "beer mug",
+    "category": "food and drink",
+    "group": "drink",
     "htmlCode": [
-    "&#128029;"
+    "&#127866;"
     ],
     "unicode": [
-    "U+1F41D"
+    "U+1F37A"
     ]
     },
     {
-    "name": "lady beetle",
-    "category": "animals and nature",
-    "group": "animal bug",
+    "name": "clinking beer mugs",
+    "category": "food and drink",
+    "group": "drink",
     "htmlCode": [
-    "&#128030;"
+    "&#127867;"
     ],
     "unicode": [
-    "U+1F41E"
+    "U+1F37B"
     ]
     },
     {
-    "name": "spider",
-    "category": "animals and nature",
-    "group": "animal bug",
+    "name": "clinking glasses",
+    "category": "food and drink",
+    "group": "drink",
     "htmlCode": [
-    "&#128375;"
+    "&#129346;"
     ],
     "unicode": [
-    "U+1F577"
+    "U+1F942"
     ]
     },
     {
-    "name": "spider web",
-    "category": "animals and nature",
-    "group": "animal bug",
+    "name": "tumbler glass",
+    "category": "food and drink",
+    "group": "drink",
     "htmlCode": [
-    "&#128376;"
+    "&#129347;"
     ],
     "unicode": [
-    "U+1F578"
+    "U+1F943"
     ]
     },
     {
-    "name": "scorpion",
-    "category": "animals and nature",
-    "group": "animal bug",
+    "name": "fork and knife with plate",
+    "category": "food and drink",
+    "group": "dishware",
     "htmlCode": [
-    "&#129410;"
+    "&#127869;"
     ],
     "unicode": [
-    "U+1F982"
+    "U+1F37D"
     ]
     },
     {
-    "name": "bouquet",
-    "category": "animals and nature",
-    "group": "plant flower",
+    "name": "fork and knife",
+    "category": "food and drink",
+    "group": "dishware",
     "htmlCode": [
-    "&#128144;"
+    "&#127860;"
     ],
     "unicode": [
-    "U+1F490"
+    "U+1F374"
     ]
     },
     {
-    "name": "cherry blossom",
-    "category": "animals and nature",
-    "group": "plant flower",
+    "name": "spoon",
+    "category": "food and drink",
+    "group": "dishware",
     "htmlCode": [
-    "&#127800;"
+    "&#129348;"
     ],
     "unicode": [
-    "U+1F338"
+    "U+1F944"
     ]
     },
     {
-    "name": "white flower",
-    "category": "animals and nature",
-    "group": "plant flower",
+    "name": "hocho ≊ kitchen knife",
+    "category": "food and drink",
+    "group": "dishware",
     "htmlCode": [
-    "&#128174;"
+    "&#128298;"
     ],
     "unicode": [
-    "U+1F4AE"
+    "U+1F52A"
     ]
     },
     {
-    "name": "rosette",
-    "category": "animals and nature",
-    "group": "plant flower",
+    "name": "amphora",
+    "category": "food and drink",
+    "group": "dishware",
     "htmlCode": [
-    "&#127989;"
+    "&#127994;"
     ],
     "unicode": [
-    "U+1F3F5"
-    ]
-    },
-    {
-    "name": "rose",
-    "category": "animals and nature",
-    "group": "plant flower",
-    "htmlCode": [
-    "&#127801;"
-    ],
-    "unicode": [
-    "U+1F339"
-    ]
-    },
-    {
-    "name": "wilted flower",
-    "category": "animals and nature",
-    "group": "plant flower",
-    "htmlCode": [
-    "&#129344;"
-    ],
-    "unicode": [
-    "U+1F940"
-    ]
-    },
-    {
-    "name": "hibiscus",
-    "category": "animals and nature",
-    "group": "plant flower",
-    "htmlCode": [
-    "&#127802;"
-    ],
-    "unicode": [
-    "U+1F33A"
-    ]
-    },
-    {
-    "name": "sunflower",
-    "category": "animals and nature",
-    "group": "plant flower",
-    "htmlCode": [
-    "&#127803;"
-    ],
-    "unicode": [
-    "U+1F33B"
-    ]
-    },
-    {
-    "name": "blossom",
-    "category": "animals and nature",
-    "group": "plant flower",
-    "htmlCode": [
-    "&#127804;"
-    ],
-    "unicode": [
-    "U+1F33C"
-    ]
-    },
-    {
-    "name": "tulip",
-    "category": "animals and nature",
-    "group": "plant flower",
-    "htmlCode": [
-    "&#127799;"
-    ],
-    "unicode": [
-    "U+1F337"
-    ]
-    },
-    {
-    "name": "seedling",
-    "category": "animals and nature",
-    "group": "plant other",
-    "htmlCode": [
-    "&#127793;"
-    ],
-    "unicode": [
-    "U+1F331"
-    ]
-    },
-    {
-    "name": "evergreen tree ≊ evergreen",
-    "category": "animals and nature",
-    "group": "plant other",
-    "htmlCode": [
-    "&#127794;"
-    ],
-    "unicode": [
-    "U+1F332"
-    ]
-    },
-    {
-    "name": "deciduous tree",
-    "category": "animals and nature",
-    "group": "plant other",
-    "htmlCode": [
-    "&#127795;"
-    ],
-    "unicode": [
-    "U+1F333"
-    ]
-    },
-    {
-    "name": "palm tree",
-    "category": "animals and nature",
-    "group": "plant other",
-    "htmlCode": [
-    "&#127796;"
-    ],
-    "unicode": [
-    "U+1F334"
-    ]
-    },
-    {
-    "name": "cactus",
-    "category": "animals and nature",
-    "group": "plant other",
-    "htmlCode": [
-    "&#127797;"
-    ],
-    "unicode": [
-    "U+1F335"
-    ]
-    },
-    {
-    "name": "ear of rice ≊ sheaf of rice",
-    "category": "animals and nature",
-    "group": "plant other",
-    "htmlCode": [
-    "&#127806;"
-    ],
-    "unicode": [
-    "U+1F33E"
-    ]
-    },
-    {
-    "name": "herb",
-    "category": "animals and nature",
-    "group": "plant other",
-    "htmlCode": [
-    "&#127807;"
-    ],
-    "unicode": [
-    "U+1F33F"
-    ]
-    },
-    {
-    "name": "shamrock",
-    "category": "animals and nature",
-    "group": "plant other",
-    "htmlCode": [
-    "&#9752;"
-    ],
-    "unicode": [
-    "U+2618"
-    ]
-    },
-    {
-    "name": "four leaf clover",
-    "category": "animals and nature",
-    "group": "plant other",
-    "htmlCode": [
-    "&#127808;"
-    ],
-    "unicode": [
-    "U+1F340"
-    ]
-    },
-    {
-    "name": "maple leaf",
-    "category": "animals and nature",
-    "group": "plant other",
-    "htmlCode": [
-    "&#127809;"
-    ],
-    "unicode": [
-    "U+1F341"
-    ]
-    },
-    {
-    "name": "fallen leaf",
-    "category": "animals and nature",
-    "group": "plant other",
-    "htmlCode": [
-    "&#127810;"
-    ],
-    "unicode": [
-    "U+1F342"
-    ]
-    },
-    {
-    "name": "leaf fluttering in wind",
-    "category": "animals and nature",
-    "group": "plant other",
-    "htmlCode": [
-    "&#127811;"
-    ],
-    "unicode": [
-    "U+1F343"
+    "U+1F3FA"
     ]
     }
     ]
